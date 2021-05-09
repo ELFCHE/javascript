@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/left-navigation.css" />
+    <link rel="stylesheet" href="styles/horizontal-search-bar.css" />
+    <link rel="stylesheet" href="styles/chat-content.css" />
+
+    <title>Slack</title>
+  </head>
+  <body>
+    <div class="header">
+      <div id="search-bar">
+        <div class="icon" id="clock">
+          <img src="resources/icon 20px/clock.png" />
+        </div>
+        <div class="searchbox">
+          <input
+            type="text"
+            id="channel-search"
+            placeholder="  Search WEb-DEV_05-07"
+          />
+        </div>
+        <div class="icon" id="help">
+          <img src="resources/icon 20px/help.png" />
+        </div>
+        <div id="avatar"><img src="resources/icon 32px/avatar.png" /></div>
+      </div>
+      <div class="container">
+        <div id="active-workspace">
+          <div id="workspace">
+            <span>WEB-DEV_05-07</span>
+          </div>
+          <div id="new-message">
+            <img src="resources/icon 48px/new-message.png" />
+          </div>
+        </div>
+        <div id="active-chat">
+          <div>
+            <img id="status-icon" src="resources/icon 16px/status.png" />
+            <span id="user-name">Cvetomir Todorov</span>
+            <img id="favorite" src="resources/icon 16px/star.png" />
+          </div>
+          <div class="call-info">
+            <div>
+              <img id="call" src="resources/icon 32px/phone.png" />
+              <img id="info-icon" src="resources/icon 20px/info.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="left-side-navbar">
+        <div class="vertical-menu" id="actions">
+          <div class="mentions">
+            <img id="mentions-icon" src="resources/icon 16px/email.png" />
+            <a href="#">Mentions & reactions</a>
+          </div>
+          <div class="more">
+            <img src="resources/icon 16px/dots.png" id="more-icon" />
+            <div class="dropdown">
+              <button class="dropbtn">More</button>
+              <div class="dropdown-content">
+                <a href="#">All unreads</a>
+                <hr />
+                <a href="#">Channel browser</a>
+                <a href="#">File browser</a>
+                <a href="#">People & user groups</a>
+                <a href="#">Apps</a>
+                <hr />
+                <span>
+                  Customize this list in your
+                  <a href="#" id="pref">preferences</a></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vertical-menu" id="channels">
+          <div class="active">
+            <a href="#"><img src="resources/icon 16px/arrow-.png" />Channels</a>
+          </div>
+          <div class="inactive">
+            <a href="#"><span>#</span>general</a>
+            <a href="#"><span>#</span>homework</a>
+            <a href="#"><span>#</span>random</a>
+            <a href="#"><span>#</span>seminars-and-trainings</a>
+            <a href="#"><span>#</span>teaching</a>
+            <a href="#"><span>#</span>Add channels</a>
+          </div>
+        </div>
+        <div class="vertical-menu" id="direct-messages">
+          <div class="active">
+            <a href="#"
+              ><img src="resources/icon 16px/arrow-.png" /> Direct messages</a
+            >
+          </div>
+          <div class="inactive">
+            <a href="#"><img src="resources/icon 16px/slack.png" />Slackbot</a>
+            <a href="#"
+              ><img src="resources/icon 32px/male.png" />Mihail Petrov</a
+            >
+            <a href="#"
+              ><img src="resources/icon 32px/male.png" />Cvetomir Todorov</a
+            >
+            <a href="#"
+              ><img src="resources/icon 32px/female.png" />Dayana Dimitrova</a
+            >
+            <a href="#"><img src="resources/icon 32px/female.png" />Yordanka</a>
+            <a href="#"><img src="resources/icon 32px/male.png" />Божидар</a>
+            <a href="#"
+              ><img src="resources/icon 32px/male.png" />Кристиян Мангелов</a
+            >
+            <a href="#"
+              ><img src="resources/icon 16px/plus.png" />Add teammates</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="chat-messages">
+        <div class="writer">
+          <div class="writer-info">
+            <img src="resources/icon 32px/woman.png" />
+            <div class="writer-name">
+              <span class="name"
+                >Evelina Vasileva <span class="time">4:07 PM</span></span
+              >
+              <span id="call">Call</span>
+            </div>
+          </div>
+          <div class="call-ended-info">
+            <div class="call-duration">
+              <div>
+                <img src="resources/icon 32px/call-end.png" />
+              </div>
+              <div class="call-ended-time">
+                <span>Call Ended</span>
+                <span>Ended at 5:02 PM - Lasted 54 minutes</span>
+              </div>
+            </div>
+            <div class="people-joined">
+              <div class="people-joined-avatars">
+                <img src="resources/icon 32px/man.png" id="first" />
+                <img src="resources/icon 32px/woman.png" id="second" />
+              </div>
+              <span>You both joined</span>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div class="writer">
+          <div class="writer-info">
+            <img src="resources/icon 32px/man.png" />
+            <div class="writer-name">
+              <span class="name"
+                >Cvetomir Todorov <span class="time">4:08 PM</span></span
+              >
+            </div>
+          </div>
+          <div class="text-message">
+            <span> 335 993 293</span>
+            <span id="vmf"><span class="time"> 4:08 </span>666vmf</span>
+            <span> mnt838</span>
+          </div>
+        </div>
+        <div class="date-line"><span>Monday, March 29th</span></div>
+        <div class="writer">
+          <div class="writer-info">
+            <img src="resources/icon 32px/man.png" />
+            <div class="writer-name">
+              <span class="name"
+                >Cvetomir Todorov<span class="time"> 9:27 PM</span></span
+              >
+            </div>
+          </div>
+          <div class="text-message">
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+            >
+            <span
+              >Sed, quaerat facere cum ad doloribus assumenda animi sit
+              voluptatem eligendi, aut quasi repellendus odio quam odit.</span
+            >
+          </div>
+        </div>
+        <div class="writer">
+          <div class="writer-info">
+            <img src="resources/icon 32px/woman.png" />
+            <div class="writer-name">
+              <span class="name"
+                >Evelina Vasileva<span class="time"> 9:44 PM</span></span
+              >
+            </div>
+          </div>
+          <div class="text-message">
+            <span
+              >Accusantium impedit blanditiis est velit cum laboriosam?</span
+            >
+            <span
+              >Iusto, ducimus dolorem ipsum totam velit, molestias debitis cum
+              accusamus laudantium eius quo modi! Velit.</span
+            >
+          </div>
+        </div>
+        <div class="date-line-new">
+          <span>Monday, April 19th</span>
+        </div>
+        <div class="writer">
+          <div class="writer-info">
+            <img src="resources/icon 32px/man.png" />
+            <div class="writer-name">
+              <span class="name"
+                >Cvetomir Todorov<span class="time"> 10:22 PM</span></span
+              >
+            </div>
+          </div>
+          <div class="text-message">
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+            >
+            <span
+              >Sed, quaerat facere cum ad doloribus assumenda animi sit
+              voluptatem eligendi, aut quasi repellendus odio quam odit.</span
+            >
+          </div>
+        </div>
+        <div class="notifications">
+          <img id="bell" src="resources/icon 20px/bell.png" />
+          <div>
+            <span
+              >Cvetomir Todorov has <span>notifications turned off</span></span
+            >
+          </div>
+        </div>
+        <div class="message-box">
+          <textarea id="text-message">Message Cvetomir Todorov</textarea>
+          <div class="edit-buttons">
+            <div class="edit-text-buttons">
+              <div id="shortcuts">
+                <img src="resources/icon 16px/smile.png" />
+              </div>
+              <div class="text-style" id="bold"><span>B</span></div>
+              <div class="text-style" id="italic"><span>I</span></div>
+            </div>
+
+            <div class="add-content">
+              <div><span>Aa</span></div>
+              <img src="resources/icon 16px/at.png" />
+              <img src="resources/icon 16px/smile.png" />
+              <img src="resources/icon 16px/clip.png" />
+
+              <img src="resources/icon 16px/arrow-right.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

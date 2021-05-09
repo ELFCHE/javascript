@@ -1,0 +1,199 @@
+.content-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-messages {
+  flex-grow: 2;
+}
+
+.writer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 20px;
+}
+
+.writer-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-around;
+}
+
+.writer-name {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 8px 10px;
+}
+#call {
+  margin-top: 4px;
+}
+
+.call-ended-info {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  height: 146px;
+  margin-left: 43px;
+  border-radius: 11px;
+  border: solid 1px rgb(189, 186, 186);
+}
+.call-duration {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 78px;
+  border-bottom: solid 1px rgb(189, 186, 186);
+  padding-left: 16px;
+}
+
+.call-ended-time {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.people-joined {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 66px;
+  padding-left: 16px;
+  background-color: #f6f6f6;
+  border-radius: 12px;
+}
+.people-joined-avatars {
+  display: flex;
+  flex-direction: inherit;
+}
+.people-joined-avatars img {
+  filter: grayscale(100%);
+}
+.people-joined span {
+  margin-left: auto;
+  margin-right: 17px;
+  color: rgb(168, 165, 165);
+}
+#first {
+  margin-right: 3px;
+}
+.name {
+  font-weight: bold;
+}
+.time {
+  font-weight: normal;
+  color: rgb(182, 181, 181);
+}
+.text-message {
+  display: flex;
+  flex-direction: column;
+  margin-left: 43px;
+}
+#vmf {
+  margin-left: -31px;
+  background-color: #f8f8f8;
+}
+.date-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.date-line::before,
+.date-line::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid rgb(207, 205, 205);
+  margin: auto;
+}
+
+.date-line span {
+  border: 1px solid rgb(207, 205, 205);
+  padding: 7px 13px 7px 13px;
+  border-radius: 20px;
+}
+
+.date-line-new {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.date-line-new::before,
+.date-line-new::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid red;
+  margin: auto;
+}
+
+.date-line-new span {
+  border: 1px solid rgb(207, 205, 205);
+  padding: 7px 13px 7px 13px;
+  border-radius: 20px;
+}
+.notifications {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 34px;
+  color: rgb(143, 142, 142);
+}
+#bell {
+  margin-right: 8px;
+}
+.notifications span span {
+  font-weight: bold;
+}
+
+.message-box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: 20px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.message-box textarea {
+  border: none;
+  color: rgb(172, 172, 172);
+  resize: none;
+  padding: 10px 0 0 9px;
+}
+
+.edit-buttons {
+  display: flex;
+  flex-direction: row;
+}
+#shortcuts {
+  border-right: 1px solid rgb(155, 154, 154);
+  margin: 0 0px 5px 10px;
+  padding-right: 6px;
+}
+.edit-text-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-style {
+  margin-left: 20px;
+  color: rgb(238, 237, 237);
+}
+#italic {
+  font-style: italic;
+}
+.add-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.add-content img {
+  padding: 9px;
+}
+.add-content div {
+  padding: 8px;
+  color: rgb(238, 237, 237);
+}
