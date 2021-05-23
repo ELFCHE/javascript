@@ -5,7 +5,6 @@ let robotJumpsOverTheChair;
 let robotMovesSideway;
 
 let hitCount = 0;
-let wasTheMouseDestroied = true;
 let numberOfPixels = 0;
 
 let randomNumber = Math.floor(Math.random() * 10) + 1;
@@ -18,21 +17,19 @@ while (hitCount <= 4) {
     "What is in front of the Robot: wall, chair or nothing"
   );
   robotMovesForward = typeOfObject == "nothing";
-  robotJumpsOverTheChair; = typeOfObject == "chair";
-  robotMovesSideway
- = typeOfObject == "wall";
+  robotJumpsOverTheChair = typeOfObject == "chair";
+  robotMovesSideway = typeOfObject == "wall";
 
   // Enter the Robot's action
   if (robotMovesForward) {
     console.log("Go robotMovesForward!");
   }
 
-  if (robotJumpsOverTheChair;) {
+  if (robotJumpsOverTheChair) {
     console.log("robotJumpsOverTheChair;!");
   }
 
-  if (robotMovesSideway
-  ) {
+  if (robotMovesSideway) {
     console.log("Go right!");
   }
 
@@ -40,49 +37,17 @@ while (hitCount <= 4) {
 
   if (numberOfPixels % 2 == 0) {
     console.log("The mouse is detected! Atack!");
-    console.log("You destroyed only the mouse!");
+    wasTheMouseDestroyed = randomNumber == 5;
+
+    let message = wasTheMouseDestroyed
+      ? "You destroyed all furnitures but not the mouse!"
+      : "You destroyed only the mouse!";
+    console.log(message);
     hitCount++;
-    wasTheMouseDestroied = true;
-
-    if(randomNumber == 5){
-      console.log("You destroyed all furnitures but not the mouse!");
-      wasTheMouseDestroied = false;
-    }
-
-
-    // (randomNumber == 5) ? console.log("You destroyed all furnitures but not the mouse!") : console.log("You destroyed only the mouse!");
-    //  hitCount++;
-
-
-    //  while (randomNumber != 5) {
-    //    console.log("You destroyed only the mouse!");
-    //    hitCount++;
-    //    wasTheMouseDestroied = true;
-    //  }
-
-
-    // if (randomNumber === 5) {
-    //   console.log("You destroyed all furnitures but not the mouse!");
-    //   hitCount++;
-    //   wasTheMouseDestroied = false;
-    // } else {
-    //   console.log("You destroyed only the mouse!");
-    //   hitCount++;
-    //   wasTheMouseDestroied = true;
-    // }
-
-
-    if (wasTheMouseDestroied) {
-      console.log("Search for a new mouse!");
-    } else {
-      console.log("Hit again!");
-      hitCount++;
-    }
   } else {
     console.log(" Mouse is not detected, continue searching!");
   }
 }
-
 
 console.log("Your battery is low. Search for a charging station immediately!");
 
@@ -97,5 +62,5 @@ if (randomNumber1 > randomNumber2) {
 }
 
 for (let i = 10; i >= 1; i--) {
-  (i % 2 == 0) ? console.log(`I am a Robot! ${i}`) : console.log(i);
+  i % 2 == 0 ? console.log(`I am a Robot! ${i}`) : console.log(i);
 }
