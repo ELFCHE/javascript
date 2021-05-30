@@ -180,6 +180,49 @@ function takeBanichka() {
   }
 }
 
+function cureDepression() {
+  randomNumber = generateRandomNumberBetweenMinAndMax(1, 100);
+  let robotIsOK = 1 <= randomNumber <= 50;
+  let robotWantsToDie = 50 < randomNumber <= 100;
+
+  console.log("How are you Robot?");
+  if (robotIsOK) {
+    console.log("Lets go to work!");
+    console.log("The Robot smiles misteriously.");
+    startRobot(
+      isNumberEven,
+      negativeEmotion,
+      positiveEmotion,
+      generalDailyEmotion
+    );
+  } else if (robotWantsToDie) {
+    let randomNumber = generateRandomNumberBetweenMinAndMax(1, 1000);
+    console.log("I don't want to live anymore!");
+    console.log("I am going to raise your salary!");
+
+    let salaryRaiseProposal = prompt("Please enter new salary proposal: ");
+    if (salaryRaiseProposal >= randomNumber) {
+      startRobot(
+        isNumberEven,
+        negativeEmotion,
+        positiveEmotion,
+        generalDailyEmotion
+      );
+    }
+    // else {continue};
+  }
+}
+
+function selfDestruction() {
+  console.log("Goodbye cruel World!");
+
+  for (let i = 0; i <= stepsCount; i++) {
+    console.log(i);
+  }
+}
+
 robotGoToIndustrialUnit();
 recognizeBanichka();
 takeBanichka();
+cureDepression();
+selfDestruction();
